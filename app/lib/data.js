@@ -67,20 +67,60 @@ export const fetchProduct = async (id) => {
 export const cards = [
   {
     id: 1,
-    title: "Total Users",
-    number: 10.928,
+    title: "Total Register Users",
+    number: 100000,
     change: 12,
   },
   {
     id: 2,
-    title: "Stock",
-    number: 8.236,
+    title: "Free Cash Flow",
+    number: "MYR 4.5 Million",
     change: -2,
   },
   {
     id: 3,
-    title: "Revenue",
-    number: 6.642,
-    change: 18,
+    title: "Active Project",
+    number: 100,
+    change: 10,
   },
+];
+
+export const cardsProject = [
+  {
+    id: 1,
+    img:"/solar.jpg",
+    title: "Kedah Solar Farm",
+    roi: "10%",
+    noi: "10000",
+    toi:"MYR 1.2 Million"
+  },
+  {
+    id: 2,
+    img:"/charge.jpg",
+    title: "Mcd Bayan Baru Charging Station",
+    roi: "20%",
+    noi: "200",
+    toi:"MYR 0.5 Million"
+
+  },
+
+];
+
+export const cardsPortfolio = [
+  {
+    id: 1,
+    title: "Net Liquidation Value",
+    number: "MYR 5000",
+  },
+  {
+    id: 2,
+    title: "Cash Balance",
+    number: "MYR 3000",
+  },
+  {
+    id: 3,
+    title: "Invested project",
+    number: 2,
+  },
+
 ];

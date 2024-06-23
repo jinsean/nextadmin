@@ -10,6 +10,6 @@
   /* When you mouse over the container, add a grey background color */
   .container:hover,
   .active {
-    background-color: #2e374a;
+    background-color: #ffffff;
   }
   

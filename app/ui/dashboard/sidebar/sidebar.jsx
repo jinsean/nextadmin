@@ -1,14 +1,14 @@
 import Image from "next/image";
 import MenuLink from "./menuLink/menuLink";
 import styles from "./sidebar.module.css";
+import { PiProjectorScreenChart } from "react-icons/pi";
+import { FaChartPie } from "react-icons/fa";
+import { HiOutlineBuildingStorefront } from "react-icons/hi2";
+
 import {
   MdDashboard,
   MdSupervisedUserCircle,
   MdShoppingBag,
-  MdAttachMoney,
-  MdWork,
-  MdAnalytics,
-  MdPeople,
   MdOutlineSettings,
   MdHelpCenter,
   MdLogout,
@@ -17,7 +17,7 @@ import { auth, signOut } from "@/app/auth";
 
 const menuItems = [
   {
-    title: "Pages",
+    title: "Main",
     list: [
       {
         title: "Dashboard",
@@ -25,39 +25,24 @@ const menuItems = [
         icon: <MdDashboard />,
       },
       {
-        title: "Users",
-        path: "/dashboard/users",
-        icon: <MdSupervisedUserCircle />,
-      },
-      {
-        title: "Products",
-        path: "/dashboard/products",
-        icon: <MdShoppingBag />,
-      },
-      {
-        title: "Transactions",
-        path: "/dashboard/transactions",
-        icon: <MdAttachMoney />,
+        title: "Projects",
+        path: "/dashboard/projects",
+        icon: <PiProjectorScreenChart />,
       },
     ],
   },
   {
-    title: "Analytics",
+    title: "Finance",
     list: [
       {
-        title: "Revenue",
-        path: "/dashboard/revenue",
-        icon: <MdWork />,
+        title: "portfolio",
+        path: "/dashboard/portfolio",
+        icon: <FaChartPie />,
       },
       {
-        title: "Reports",
-        path: "/dashboard/reports",
-        icon: <MdAnalytics />,
-      },
-      {
-        title: "Teams",
-        path: "/dashboard/teams",
-        icon: <MdPeople />,
+        title: "Marketplace",
+        path: "/dashboard/marketplace",
+        icon: <HiOutlineBuildingStorefront />,
       },
     ],
   },
@@ -69,13 +54,23 @@ const menuItems = [
         path: "/dashboard/settings",
         icon: <MdOutlineSettings />,
       },
-      {
-        title: "Help",
-        path: "/dashboard/help",
-        icon: <MdHelpCenter />,
-      },
     ],
   },
+  {
+    title: "Ref",
+    list:[
+      {
+        title: "Users",
+        path: "/dashboard/users",
+        icon: <MdSupervisedUserCircle />,
+      },
+      {
+        title: "Products",
+        path: "/dashboard/products",
+        icon: <MdShoppingBag />,
+      },
+    ]
+  }
 ];
 
 const Sidebar = async () => {
@@ -91,8 +86,7 @@ const Sidebar = async () => {
           height="50"
         />
         <div className={styles.userDetail}>
-          <span className={styles.username}>{user.username}</span>
-          <span className={styles.userTitle}>Administrator</span>
+          <span className={styles.username}> Welcome, {user.username}</span>
         </div>
       </div>
       <ul className={styles.list}>

@@ -18,9 +18,9 @@
     padding: 10px;
   }
   
-  .user{
+  .project{
     display: flex;
-    gap: 10px;
+    gap: 5px;
     align-items: center;
   }
   
@@ -36,14 +36,20 @@
     color: white;
   }
   
-  .pending{
-    background-color: #f7cb7375;
+  .funding{
+    background-color: #ffee0075;
   }
+
+  .review{
+    background-color: #738bf775;
+  }
+
+  .construction{
+    background-color: #ffaa0075;
+  }
+
   
   .done{
-    background-color: #afd6ee75;
+    background-color: #afeeb975;
   }
   
-  .cancelled{
-    background-color: #f7737375;
-  }

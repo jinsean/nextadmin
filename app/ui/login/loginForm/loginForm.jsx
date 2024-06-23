@@ -14,8 +14,9 @@ const LoginForm = () => {
       <input type="password" placeholder="password" name="password" />
       <button>Login</button>
       {state && state}
-    </form>
+    </form > 
   );
 };
 
 export default LoginForm;
+

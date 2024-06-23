@@ -1,0 +1,52 @@
+.container {
+    background-color: var(--bgSoft);
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    gap: 20px;
+    cursor: pointer;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .container:hover{
+    background-color: #ffffff;
+  }
+
+  .userImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .texts{
+    display: flex;
+    flex-direction: column;
+    gap: 10px
+  }
+
+.buttoncontainer {
+    display: flex;
+    gap: 10px; /* Adjust spacing between buttons */
+    margin-top: 10px; /* Add some space above the buttons */
+    width: 100%;
+  }
+  
+  
+  .button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: var(--text);
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+    flex-grow: 1;
+  }
+  .invest{
+    background-color: rgba(0, 128, 17, 0.158);
+  }
+  
+  .negative {
+    color: red;
+  }
+  

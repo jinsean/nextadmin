@@ -73,6 +73,29 @@ const productSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+const projectSchema = new mongoose.Schema(
+  {
+    img: {
+      type: String,
+    },
+    type: {
+      type: String,
+    },
+    title: {
+      type: String,
+    },
+    desc: {
+      type: String,
+    },
+    loca:{
+      type: String
+    }
+  },
+  { timestamps: true }
+);
+
+
 // Check the user exists or not
 export const User = mongoose.models.User || mongoose.model("User", userSchema);
 export const Product = mongoose.models.Product || mongoose.model("Product", productSchema);
+export const Project = mongoose.models.Project || mongoose.model("Project", projectSchema);
